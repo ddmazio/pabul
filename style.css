@@ -247,12 +247,13 @@ footer img { height: 34px; display: block; }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 16px;
+  overflow: hidden;
 }
 
 .hero-tagline-top {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(12px, 1vw, 14px);
+  font-size: clamp(11px, 0.9vw, 13px);
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -261,22 +262,25 @@ footer img { height: 34px; display: block; }
 
 .hero-come-meet {
   font-family: 'Bagel Fat One', cursive;
-  font-size: clamp(32px, 4vw, 52px);
+  font-size: clamp(28px, 3.5vw, 46px);
   color: var(--cream);
   line-height: 1;
 }
 
 .hero-wordmark img {
   width: 100%;
-  max-width: 460px;
+  max-width: 440px;
+  max-height: 130px;
+  object-fit: contain;
+  object-position: left center;
   display: block;
 }
 
 .hero-desc {
-  font-size: clamp(15px, 1.4vw, 18px);
+  font-size: clamp(14px, 1.3vw, 17px);
   font-weight: 400;
   color: var(--cream-text);
-  line-height: 1.65;
+  line-height: 1.6;
   max-width: 400px;
 }
 
@@ -501,6 +505,14 @@ footer img { height: 34px; display: block; }
   object-fit: cover;
   display: block;
 }
+
+/* James mascote in about */
+.about-james {
+  float: right;
+  margin: 0 0 16px 24px;
+  width: clamp(64px, 8vw, 96px);
+}
+.about-james img { width: 100%; display: block; }
 
 /* ═══════════════════════════════════════════════════
    MENU
