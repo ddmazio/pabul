@@ -238,17 +238,16 @@ footer img { height: 34px; display: block; }
 .hero {
   display: grid;
   grid-template-columns: 69fr 31fr;
-  flex: 1;
-  min-height: calc(100vh - var(--nav-h) - 80px);
+  height: calc(100vh - var(--nav-h));
 }
 
 .hero-left {
   background: var(--red);
-  padding: 72px 80px 72px 108px;
+  padding: 80px 80px 96px 108px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 32px;
+  gap: 20px;
 }
 
 .hero-tagline-top {
@@ -295,6 +294,7 @@ footer img { height: 34px; display: block; }
   border: none;
   cursor: pointer;
   width: fit-content;
+  margin-top: 8px;
   transition: opacity 0.18s, transform 0.15s;
 }
 .hero-cta:hover { opacity: 0.82; transform: translateY(-2px); }
@@ -396,26 +396,6 @@ footer img { height: 34px; display: block; }
   padding: 60px;
 }
 
-.about-photo {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  border-radius: 3px;
-}
-.about-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.about-divider-line {
-  background: var(--red);
-  height: 320px;
-  align-self: center;
-  width: 1px;
-  flex-shrink: 0;
-}
 
 .about-text {
   font-size: clamp(13px, 1.1vw, 15px);
@@ -520,49 +500,6 @@ footer img { height: 34px; display: block; }
   height: 100%;
   object-fit: cover;
   display: block;
-}
-
-/* ── Journey Map SVG ── */
-.journey-map-container {
-  width: 100%;
-  border-radius: 6px;
-  overflow: hidden;
-  line-height: 0;
-}
-.journey-map { width: 100%; height: auto; display: block; }
-
-/* Path animations */
-.jm-p1, .jm-p2, .jm-p3 {
-  opacity: 0;
-  animation: jmFade 0.7s ease forwards;
-}
-.jm-p1 { animation-delay: 0.5s; }
-.jm-p2 { animation-delay: 1.6s; }
-.jm-p3 { animation-delay: 2.2s; }
-
-/* City animations */
-.jm-city {
-  opacity: 0;
-  animation: jmFade 0.5s ease forwards;
-}
-.jm-c1 { animation-delay: 0.2s; }
-.jm-c2 { animation-delay: 1.5s; }
-.jm-c3 { animation-delay: 2.0s; }
-.jm-c4 { animation-delay: 3.0s; }
-
-@keyframes jmFade { from { opacity: 0; } to { opacity: 1; } }
-
-/* Lisboa pulse ring */
-.jm-pulse {
-  opacity: 0;
-  transform-box: fill-box;
-  transform-origin: center;
-  animation: jmPulse 2.2s ease-out infinite;
-  animation-delay: 3.8s;
-}
-@keyframes jmPulse {
-  0%   { opacity: 0.9; transform: scale(1); }
-  100% { opacity: 0;   transform: scale(2.8); }
 }
 
 /* ═══════════════════════════════════════════════════
@@ -783,7 +720,6 @@ footer img { height: 34px; display: block; }
   border-right: 1px solid rgba(4,37,140,0.1);
 }
 
-
 .visit-block-label {
   font-family: 'Bagel Fat One', cursive;
   font-size: 11px;
@@ -918,7 +854,7 @@ footer img { height: 34px; display: block; }
   /* home */
   .hero {
     grid-template-columns: 1fr;
-    min-height: unset;
+    height: auto;
   }
 
   .hero-left {
@@ -962,7 +898,6 @@ footer img { height: 34px; display: block; }
     padding: 28px 20px 40px;
   }
 
-  .about-divider-line { display: none; }
   .about-photo { aspect-ratio: 4 / 3; }
 
   /* menu */
