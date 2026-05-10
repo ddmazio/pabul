@@ -36,7 +36,7 @@
   --blue:       #293e92;
   --blue-dark:  #04258c;
   --blue-night: #001B43;
-  --nav-h:      80px;
+  --nav-h:      96px;
 }
 
 html { scroll-behavior: smooth; }
@@ -120,7 +120,7 @@ nav {
 
 .nav-group a {
   font-family: 'Bagel Fat One', cursive;
-  font-size: 19px;
+  font-size: 20px;
   color: var(--blue);
   text-decoration: none;
   cursor: pointer;
@@ -135,7 +135,7 @@ nav {
   cursor: pointer;
   line-height: 0;
 }
-.nav-logo img { height: 60px; display: block; }
+.nav-logo img { height: 70px; display: block; }
 
 /* hamburger — hidden on desktop */
 .nav-hamburger {
@@ -212,7 +212,7 @@ nav {
 ───────────────────────────────────────────────── */
 footer {
   background: var(--cream);
-  height: 80px;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -244,41 +244,41 @@ footer img { height: 34px; display: block; }
 
 .hero-left {
   background: var(--red);
-  padding: 64px 80px 64px 100px;
+  padding: 72px 80px 72px 108px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 24px;
+  gap: 32px;
 }
 
 .hero-tagline-top {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(11px, 1vw, 13px);
+  font-size: clamp(12px, 1vw, 14px);
   font-weight: 600;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: rgba(245,240,232,0.65);
 }
 
 .hero-come-meet {
   font-family: 'Bagel Fat One', cursive;
-  font-size: clamp(30px, 3.5vw, 48px);
+  font-size: clamp(32px, 4vw, 52px);
   color: var(--cream);
   line-height: 1;
 }
 
 .hero-wordmark img {
   width: 100%;
-  max-width: 420px;
+  max-width: 460px;
   display: block;
 }
 
 .hero-desc {
-  font-size: clamp(14px, 1.3vw, 17px);
+  font-size: clamp(15px, 1.4vw, 18px);
   font-weight: 400;
   color: var(--cream-text);
-  line-height: 1.6;
-  max-width: 380px;
+  line-height: 1.65;
+  max-width: 400px;
 }
 
 .hero-cta {
@@ -310,7 +310,7 @@ footer img { height: 34px; display: block; }
 /* ── HOME — PILLARS STRIP ── */
 .pillars {
   background: var(--cream);
-  padding: 80px 60px;
+  padding: 100px 60px;
   border-top: 1px solid rgba(4,37,140,0.08);
 }
 
@@ -389,9 +389,9 @@ footer img { height: 34px; display: block; }
 
 .about-body {
   display: grid;
-  grid-template-columns: 1fr 1px 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: start;
-  gap: 0 48px;
+  gap: 0 60px;
   flex: 1;
   padding: 60px;
 }
@@ -506,6 +506,20 @@ footer img { height: 34px; display: block; }
   border-radius: 20px;
   padding: 4px 14px;
   letter-spacing: 0.04em;
+}
+
+/* ── About photo ── */
+.about-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* James mascote in about */
@@ -900,8 +914,8 @@ footer img { height: 34px; display: block; }
 ───────────────────────────────────────────────── */
 @media (max-width: 720px) {
 
-  :root { --nav-h: 64px; }
-  nav    { padding: 0 20px; height: 64px; }
+  :root { --nav-h: 68px; }
+  nav    { padding: 0 20px; height: 68px; }
   footer { padding: 0 20px; height: 70px; }
   .footer-info { font-size: 11px; }
 
@@ -957,7 +971,7 @@ footer img { height: 34px; display: block; }
   }
 
   .about-divider-line { display: none; }
-  .journey-map-container { border-radius: 4px; }
+  .about-photo { aspect-ratio: 4 / 3; }
 
   /* menu */
   .menu-grid { grid-template-columns: 1fr; gap: 0; }
