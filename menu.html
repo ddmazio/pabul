@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Menu</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Syne:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body class="menu-page">
+
+        <div class="mobile-overlay" id="mobileOverlay">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="visit.html">Visit</a>
+            <p class="overlay-address">Rua do Crucifixo 30, Lisboa<br/>pabul.lisbon@gmail.com</p>
+        </div>
+
+        <nav>
+            <ul class="nav-group">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="nav-logo">
+                <a href="index.html"><img src="img/logo.png" alt="Pabul" /></a>
+            </div>
+            <ul class="nav-group">
+                <li><a href="menu.html" class="nav-active">Menu</a></li>
+                <li><a href="visit.html">Visit</a></li>
+            </ul>
+            <button class="nav-hamburger" aria-label="Open menu" onclick="toggleMenu(this)">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+
+        <p class="menu-title">Menu · 메뉴</p>
+
+        <div class="menu-content">
+
+            <!-- STARTERS -->
+            <p class="menu-section-title reveal">Starters · 전채</p>
+            <div class="menu-grid reveal">
+                <div class="menu-item">
+                    <div class="menu-item-top">
+                        <span class="menu-item-name">Gimbap ★</span>
+                        <span class="menu-item-price">13€</span>
+                    </div>
+                    <span class="menu-item-korean">김밥</span>
+                    <span class="menu-item-desc">Steamed rice, vegetables, beef or tuna in dried seaweed.</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-top">
+                        <span class="menu-item-name">Korean Egg Roll</span>
+                        <span class="menu-item-price">12€</span>
+                    </div>
+                    <span class="menu-item-korean">계란말이 · Gyelanmali</span>
+                    <span class="menu-item-desc">Savoury rolled omelette with finely diced vegetables.</span>
+                </div>
+                    <div class="menu-item">
+                    <div class="menu-item-top">
+                        <span class="menu-item-name">Assorted Savoury Pancakes</span>
+                        <span class="menu-item-price">15€</span>
+                    </div>
+                    <span class="menu-item-korean">모둠전 · Modum Jeon</span>
+                    <span class="menu-item-desc">Platter of courgette, fish and meat pancakes.</span>
+                </div>
+            </div>
+
+            <hr class="menu-divider" />
+
+            <!-- MAIN COURSES -->
+            <p class="menu-section-title reveal">Main Courses · 메인 요리</p>
+            <div class="menu-grid reveal">
+                <div class="menu-item">
+                    <div class="menu-item-top">
+                        <span class="menu-item-name">Pan BBQ Beef</span>
+                        <span class="menu-item-price">25€</span>
+                    </div>
+                    <span class="menu-item-korean">불고기 · Bulgogi</span>
+                    <span class="menu-item-desc">Thin marinated sirloin grilled on a stove-top griddle.</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-top">
+                        <span class="menu-item-name">Steak on Black Ramen</span>
+                        <span class="menu-item-price">25€</span>
+                    </div>
+                    <span class="menu-item-korean">짜파게티 스테이크 · Jjapagetti</span>
+                    <span class="menu-item-desc">Seared steak over Korean black bean noodles.</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-top">
+                        <span class="menu-item-name">Spicy Stir-Fried Pork <img class="spicy-icon" src="img/medio.png" alt="medium spicy" /></span>
+                        <span class="menu-item-price">23€</span>
+                    </div>
+                    <span class="menu-item-korean">제육볶음 · Jeyuk Bokkum</span>
+                    <span class="menu-item-desc">Pork stir-fried in a red chilli paste seasoning.</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-top">
+                        <span class="menu-item-name">Angry Chicken <img class="spicy-icon" src="img/picante.png" alt="super spicy" /></span>
+                        <span class="menu-item-price">23€</span>
+                    </div>
+                    <span class="menu-item-korean">닭갈비 · Dak Galbi</span>
+                    <span class="menu-item-desc">Spicy chicken with sweet potato and tteok in gochujang.</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-top">
+                        <span class="menu-item-name">Seafood Ramen</span>
+                        <span class="menu-item-price">18€</span>
+                    </div>
+                    <span class="menu-item-korean">해물라면 · Haemul Ramen</span>
+                    <span class="menu-item-desc">Squid, shrimp, dried mussels, seaweed and fish cake.</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-top">
+                        <span class="menu-item-name">Mixed Rice Bowl</span>
+                        <span class="menu-item-price">18€</span>
+                    </div>
+                    <span class="menu-item-korean">비빔밥 · Bibim Bap</span>
+                    <span class="menu-item-desc">Warm rice with namul, egg and gochujang.</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-top">
+                        <span class="menu-item-name">Kimchi Stew <img class="spicy-icon" src="img/leve.png" alt="mild" /></span>
+                        <span class="menu-item-price">19€</span>
+                    </div>
+                    <span class="menu-item-korean">김치찌개 · Kimchi Jjigae</span>
+                    <span class="menu-item-desc">Classic jjigae with kimchi, tofu and pork.</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-top">
+                        <span class="menu-item-name">Soybean Paste Stew</span>
+                        <span class="menu-item-price">19€</span>
+                    </div>
+                    <span class="menu-item-korean">된장찌개 · Doen Jang Jjigae</span>
+                    <span class="menu-item-desc">Traditional doenjang stew with clam and vegetables.</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-top">
+                        <span class="menu-item-name">Army Stew <img class="spicy-icon" src="img/medio.png" alt="medium spicy" /></span>
+                        <span class="menu-item-price">18–28€</span>
+                    </div>
+                    <span class="menu-item-korean">부대찌개 · Budae Jjigae</span>
+                    <span class="menu-item-desc">Spicy stew with ham, sausage, kimchi and noodles.</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-top">
+                        <span class="menu-item-name">Glass Noodles</span>
+                        <span class="menu-item-price">18€</span>
+                    </div>
+                    <span class="menu-item-korean">잡채 · Japchae</span>
+                    <span class="menu-item-desc">Stir-fried sweet potato noodles with vegetables.</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-top">
+                        <span class="menu-item-name">Pork Belly + Jjigae Combo</span>
+                        <span class="menu-item-price">35€</span>
+                    </div>
+                    <span class="menu-item-korean">삼겹살구이 콤보</span>
+                    <span class="menu-item-desc">Grilled pork belly with kimchi or soybean stew.</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-top">
+                        <span class="menu-item-name">James' Full Course — Bulgogi</span>
+                        <span class="menu-item-price">40€</span>
+                    </div>
+                    <span class="menu-item-korean">불고기 한정식 · Han Jeong Sik</span>
+                    <span class="menu-item-desc">Complete Korean set meal with bulgogi and banchan.</span>
+                </div>
+            </div>
+
+            <hr class="menu-divider" />
+
+            <!-- SIDES + SPICY SCALE -->
+            <div class="menu-bottom reveal">
+                <div>
+                    <p class="sides-title">Sides · 사이드</p>
+                    <div class="sides-grid">
+                        <div class="side-item">
+                        <span class="side-name">Homemade Kimchi <span class="kr">김치</span></span>
+                        <span class="side-price">3€</span>
+                        </div>
+                        <div class="side-item">
+                        <span class="side-name">Ramen <span class="kr">라면사리</span></span>
+                        <span class="side-price">2€</span>
+                        </div>
+                        <div class="side-item">
+                        <span class="side-name">Steamed Rice <span class="kr">밥</span></span>
+                        <span class="side-price">2€</span>
+                        </div>
+                        <div class="side-item">
+                        <span class="side-name">Soup <span class="kr">국</span></span>
+                        <span class="side-price">2€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spicy-scale">
+                    <p class="spicy-scale-title">James Scale of Spicy</p>
+                    <div class="spicy-levels">
+                        <div class="spicy-level">
+                        <img src="img/leve.png" alt="Mild" />
+                        <span>Mild</span>
+                        </div>
+                        <div class="spicy-level">
+                        <img src="img/medio.png" alt="Spicy" />
+                        <span>Spicy</span>
+                        </div>
+                        <div class="spicy-level">
+                        <img src="img/picante.png" alt="Super Spicy" />
+                        <span>Super Spicy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="menu-easter-egg">Already know what Pabul means? The first drink is on us. 파불</p>
+
+        </div>
+
+        <footer>
+            <img src="img/simples-branco.png" alt="Pabul" />
+            <div class="footer-info">Rua do Crucifixo 30, Lisboa<br/>pabul.lisbon@gmail.com</div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

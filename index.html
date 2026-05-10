@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PABUL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Syne:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body>
+
+    <div id="loader">
+      <img src="img/james_comevermelho.gif" alt="" />
+    </div>
+
+    <div class="mobile-overlay" id="mobileOverlay">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="visit.html">Visit</a>
+      <p class="overlay-address">Rua do Crucifixo 30, Lisboa<br/>pabul.lisbon@gmail.com</p>
+    </div>
+
+    <nav>
+      <ul class="nav-group">
+        <li><a href="index.html" class="nav-active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="nav-logo">
+        <a href="index.html"><img src="img/logo.png" alt="Pabul" /></a>
+      </div>
+      <ul class="nav-group">
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="visit.html">Visit</a></li>
+      </ul>
+      <button class="nav-hamburger" aria-label="Open menu" onclick="toggleMenu(this)">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-left">
+        <p class="hero-tagline-top">Korea. Cooked with soul.</p>
+        <p class="hero-come-meet">Come meet</p>
+        <div class="hero-wordmark">
+          <img src="img/simples-branco.png" alt="PABUL" />
+        </div>
+        <p class="hero-desc">The only restaurant in Portugal pursuing the true taste of Korean tradition: fresh vegetables, homemade kimchi, recognised by Koreans.</p>
+        <a class="hero-cta" href="menu.html">View Menu</a>
+      </div>
+      <div class="hero-right">
+        <img src="https://www.figma.com/api/mcp/asset/7454da5f-f189-430f-944a-2c26c18b8165" alt="Korean food at Pabul" />
+      </div>
+    </div>
+
+    <section class="pillars">
+      <h2 class="pillars-tagline reveal">Korea. Cooked with <span>soul.</span></h2>
+      <div class="pillars-grid reveal-group">
+        <div class="pillar">
+          <p class="pillar-number">01</p>
+          <h3 class="pillar-title">Tradition</h3>
+          <p class="pillar-text">Homemade kimchi. Fresh vegetables. Recipes that Koreans recognise as their own. Because they are.</p>
+        </div>
+        <div class="pillar">
+          <p class="pillar-number">02</p>
+          <h3 class="pillar-title">Conviction</h3>
+          <p class="pillar-text">James didn't open Pabul out of ambition or necessity. He opened it out of conviction. That changes everything about how it tastes.</p>
+        </div>
+        <div class="pillar">
+          <p class="pillar-number">03</p>
+          <h3 class="pillar-title">The 5 Senses</h3>
+          <p class="pillar-text">Food is visual, sound, smell, taste, texture. Pabul serves all five. That's what makes it Korean. That's what makes it unforgettable.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <img src="img/logo.png" alt="Pabul" />
+      <div class="footer-info">Rua do Crucifixo 30, Lisboa<br/>pabul.lisbon@gmail.com</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

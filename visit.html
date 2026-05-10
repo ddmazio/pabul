@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Visit Us</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Syne:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+        <div class="mobile-overlay" id="mobileOverlay">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="visit.html">Visit</a>
+        <p class="overlay-address">Rua do Crucifixo 30, Lisboa<br/>pabul.lisbon@gmail.com</p>
+        </div>
+
+        <nav>
+        <ul class="nav-group">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-logo">
+            <a href="index.html"><img src="img/logo.png" alt="Pabul" /></a>
+        </div>
+        <ul class="nav-group">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="visit.html" class="nav-active">Visit</a></li>
+        </ul>
+        <button class="nav-hamburger" aria-label="Open menu" onclick="toggleMenu(this)">
+            <span></span><span></span><span></span>
+        </button>
+        </nav>
+
+        <div class="visit-banner">
+        <h1>VISIT US</h1>
+        </div>
+
+        <div class="visit-body">
+
+            <div class="visit-info">
+
+                <div class="visit-block reveal">
+                    <p class="visit-block-label">Where</p>
+                    <h2 class="visit-block-title">Rua do Crucifixo 30<br/>Lisboa, Baixa</h2>
+                    <p class="visit-address">
+                        Nearest metro: Baixa-Chiado<br/>
+                        <a href="https://maps.google.com/?q=Rua+do+Crucifixo+30,+Lisboa" target="_blank">
+                        Open in Google Maps →
+                        </a>
+                    </p>
+                </div>
+
+                <div class="visit-block reveal">
+                    <p class="visit-block-label">Hours</p>
+                    <div class="visit-hours-grid">
+                        <span class="visit-day">Tue — Fri</span>
+                        <span class="visit-time">12:30 – 15:00 · 19:00 – 22:30</span>
+                        <span class="visit-day">Saturday</span>
+                        <span class="visit-time">12:30 – 16:00 · 19:00 – 23:00</span>
+                        <span class="visit-day">Sunday</span>
+                        <span class="visit-time">12:30 – 16:00</span>
+                        <span class="visit-day">Monday</span>
+                        <span class="visit-time visit-closed">Closed</span>
+                    </div>
+                </div>
+
+                <div class="visit-block reveal">
+                    <p class="visit-block-label">Contact</p>
+                    <a class="visit-email-link" href="mailto:pabul.lisbon@gmail.com">
+                        pabul.lisbon@gmail.com
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="visit-map">
+                <iframe
+                src="https://maps.google.com/maps?q=Rua+do+Crucifixo+30,+Lisboa&output=embed"
+                allowfullscreen
+                loading="lazy"
+                title="Pabul location">
+                </iframe>
+                <a class="visit-map-overlay"
+                href="https://maps.google.com/?q=Rua+do+Crucifixo+30,+Lisboa"
+                target="_blank">
+                Get Directions →
+                </a>
+            </div>
+
+        </div>
+
+        <footer>
+            <img src="img/logo.png" alt="Pabul" />
+            <div class="footer-info">Rua do Crucifixo 30, Lisboa<br/>pabul.lisbon@gmail.com</div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
