@@ -522,14 +522,6 @@ footer img { height: 34px; display: block; }
   display: block;
 }
 
-/* James mascote in about */
-.about-james {
-  float: right;
-  margin: 0 0 16px 24px;
-  width: clamp(64px, 8vw, 96px);
-}
-.about-james img { width: 100%; display: block; }
-
 /* ── Journey Map SVG ── */
 .journey-map-container {
   width: 100%;
